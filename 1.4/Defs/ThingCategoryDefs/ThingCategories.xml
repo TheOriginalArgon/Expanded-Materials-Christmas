@@ -1,0 +1,12 @@
+<Defs>
+
+
+    <ThingCategoryDef>
+        <defName>EM_ChristmasResources</defName>
+        <label>christmas resources</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Things/Item/Resource/CandycaneLogs/CandycaneLogs_c</iconPath>
+      </ThingCategoryDef>
+
+
+</Defs>

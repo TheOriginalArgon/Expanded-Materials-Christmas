@@ -1,0 +1,136 @@
+<Defs>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>EM_SantaHat</defName>
+        <label>santa hat</label>
+        <description>A soft, Christmas-styled santa hat. It gives nice vibes when wore during Christmas period.</description>
+        <graphicData>
+            <texPath>Things/Apparel/SantaHat/SantaHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <costStuffCount>25</costStuffCount>
+        <defaultStuff>Cloth</defaultStuff>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToMake>1100</WorkToMake>
+            <Mass>0.06</Mass>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.7</EquipDelay>
+        </statBases>
+        <generateCommonality>0.01</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/SantaHat/SantaHat</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <!-- ============================================ FOODS ============================================ -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_CandyCanes</defName>
+        <label>candy cane</label>
+        <description>a tasty cane-shaped, anise-flavoured piece of candy that's very popular during Christmas period. These ones in particular seem to have been made in a top-tier Christmas factory and are thought to be the best of their kind.</description>
+        <graphicData>
+            <texPath>Things/Item/Food/CandyCanes</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>5</MarketValue>
+            <Mass>0.075</Mass>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>8</DeteriorationRate>
+            <Nutrition>0.1</Nutrition>
+        </statBases>
+        <thingCategories>
+            <li>Foods</li>
+        </thingCategories>
+        <ingestible>
+            <tasteThought>EM_AteCandyCanes</tasteThought>
+            <preferability>DesperateOnly</preferability>
+            <foodType>Processed</foodType>
+            <joy>0.10</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_ChristmasCookies</defName>
+        <label>christmas cookies</label>
+        <description>cookies made specifically for Christmas, with nice Christmas tree shapes and pastel colors for that nice cozy feelin'.</description>
+        <graphicData>
+            <texPath>Things/Item/Food/Cookies</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.075</Mass>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>8</DeteriorationRate>
+            <Nutrition>0.1</Nutrition>
+        </statBases>
+        <thingCategories>
+            <li>Foods</li>
+        </thingCategories>
+        <ingestible>
+            <tasteThought>EM_AteChristmasCookies</tasteThought>
+            <preferability>DesperateOnly</preferability>
+            <foodType>Processed</foodType>
+            <joy>0.08</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+
+</Defs>

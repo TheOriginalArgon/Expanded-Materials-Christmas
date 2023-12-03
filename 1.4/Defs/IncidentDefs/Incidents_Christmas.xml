@@ -1,0 +1,15 @@
+<Defs>
+    <IncidentDef>
+        <defName>EM_ChristmasPresents</defName>
+        <label>christmas presents</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>EMChristmas.IncidentWorker_ChristmasPresents</workerClass>
+        <baseChance>3.0</baseChance>
+        <letterLabel>Christmas presents</letterLabel>
+        <letterText>{0} has been a very good colonist throughout the year! {PAWN_pronoun} has received some nice Christmas presents!</letterText>
+        <letterDef>PositiveEvent</letterDef>
+    </IncidentDef>
+</Defs>

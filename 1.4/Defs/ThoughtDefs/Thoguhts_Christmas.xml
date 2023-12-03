@@ -1,0 +1,41 @@
+<Defs>
+
+    <ThoughtDef>	
+		<defName>EM_WearingSantaHat</defName>
+		<thoughtClass>EMChristmas.Thought_ChristmasOnly</thoughtClass>
+		<workerClass>EMChristmas.ThoughtWorker_WearingSantaHat</workerClass>
+		<stages>
+			<li>
+				<label>wearing santa hat</label>
+				<description>I'm feeling Christmas vibes.</description>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<defName>EM_AteCandyCanes</defName>
+		<thoughtClass>EMChristmas.Thought_ChristmasFood</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate candy cane</label>
+				<description>I'm feeling yummy Christmas vibes.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<defName>EM_AteChristmasCookies</defName>
+		<thoughtClass>EMChristmas.Thought_ChristmasFood</thoughtClass>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate Christmas cookie</label>
+				<description>I'm feeling yummy Christmas vibes.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+</Defs>

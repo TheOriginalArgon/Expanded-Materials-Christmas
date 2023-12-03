@@ -1,0 +1,71 @@
+<Defs>
+
+
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>EM_CandyWood</defName>
+        <label>candycane wood</label>
+        <description>A strange and rare type of wood which appears to be composed of small anise-flavoured candy fibers. Its origins are completely unknown and it seems to be around mostly during Christmas eve.</description>
+        <graphicData>
+          <texPath>Things/Item/Resource/CandycaneLogs</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <statBases>
+          <MarketValue>2</MarketValue>
+          <MaxHitPoints>120</MaxHitPoints>
+          <Mass>0.4</Mass> 
+          <Flammability>1.0</Flammability>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>10</minRewardCount>
+        <thingCategories>
+          <li>EM_ChristmasResources</li>
+        </thingCategories>
+        <weaponClasses>
+          <li>Melee</li>
+          <li>MeleeBlunt</li>
+          <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+          <li>
+            <label>log</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+      </ThingDef>
+
+
+
+      <ThingDef ParentName="ResourceBase">
+        <defName>EM_GingerbreadPlates</defName>
+        <label>gingerbread plates</label>
+        <description>Big plates of sweet and tasty gingerbread. While humans do know the recipe for gingerbread, these huge plates seem to be made by the best of all bakers, who may hold the secret recipe for their size and flavour. These are mostly seen around during Christmas eve.</description>
+        <graphicData>
+          <texPath>Things/Item/Resource/Gingerbread</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <statBases>
+          <MarketValue>2.3</MarketValue>
+          <Mass>0.5</Mass>
+        </statBases>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+          <li>EM_ChristmasResources</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+      </ThingDef>
+
+
+</Defs>
