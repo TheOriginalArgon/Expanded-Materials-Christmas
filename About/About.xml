@@ -10,4 +10,11 @@
         <li>1.4</li>
     </supportedVersions>
     <description>A mod that expandss materials by adding some new Christmas-themed cool stuff.</description>
+    <modDependencies>
+        <li>
+            <packageId>Argon.CoreLib</packageId>
+            <displayName>Argonic Core</displayName>
+            <downloadUrl>https://github.com/TheOriginalArgon/ArgonicCore</downloadUrl>
+        </li>
+    </modDependencies>
 </ModMetaData>

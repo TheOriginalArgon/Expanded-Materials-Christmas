@@ -28,7 +28,7 @@
             <li Class="CompProperties_UseEffect">
                 <compClass>EMChristmas.CompUseEffect_SpawnSupplies</compClass>
             </li>
-            <li Class="CompProperties_UseEffectDestroySelf"/>
+            <li Class="CompProperties_UseEffectDestroySelf" />
             <li>
                 <compClass>CompColorable</compClass>
             </li>
@@ -85,7 +85,7 @@
             <li Class="CompProperties_UseEffect">
                 <compClass>EMChristmas.CompUseEffect_SpawnSupplies</compClass>
             </li>
-            <li Class="CompProperties_UseEffectDestroySelf"/>
+            <li Class="CompProperties_UseEffectDestroySelf" />
             <li>
                 <compClass>CompColorable</compClass>
             </li>
@@ -354,7 +354,6 @@
     </ThingDef>
 
 
-
     <ThingDef ParentName="EM_LargeGiftBase">
         <defName>EM_GiftLarge_Christmas</defName>
         <comps>
@@ -366,6 +365,8 @@
                     <li>EM_ChristmasCookies</li>
                     <li>EM_SantaHat</li>
                     <li>EM_SantaHat</li>
+                    <li>EMC_ChristmasGrenades</li>
+                    <li>EM_ChristmasComponent</li>
                 </containedSupplies>
                 <amountMin>
                     <li>30</li>
@@ -374,6 +375,8 @@
                     <li>50</li>
                     <li>2</li>
                     <li>1</li>
+                    <li>1</li>
+                    <li>5</li>
                 </amountMin>
                 <amountMax>
                     <li>70</li>
@@ -382,6 +385,8 @@
                     <li>55</li>
                     <li>3</li>
                     <li>2</li>
+                    <li>1</li>
+                    <li>20</li>
                 </amountMax>
                 <chances>
                     <li>80</li>
@@ -390,6 +395,8 @@
                     <li>60</li>
                     <li>15</li>
                     <li>2</li>
+                    <li>100</li> <!--12-->
+                    <li>18</li>
                 </chances>
                 <isLocked>false</isLocked>
             </li>
@@ -506,6 +513,7 @@
                     <li>Chemfuel</li>
                     <li>ReinforcedBarrel</li>
                     <li MayRequire="OskarPotocki.VFE.Mechanoid">VFE_ComponentMechanoid</li>
+                    <li>EM_ChristmasComponent</li>
                 </containedSupplies>
                 <amountMin>
                     <li>6</li>
@@ -519,6 +527,7 @@
                     <li>20</li>
                     <li>3</li>
                     <li>1</li>
+                    <li>10</li>
                 </amountMin>
                 <amountMax>
                     <li>12</li>
@@ -532,6 +541,7 @@
                     <li>45</li>
                     <li>5</li>
                     <li>3</li>
+                    <li>20</li>
                 </amountMax>
                 <chances>
                     <li>90</li>
@@ -545,6 +555,7 @@
                     <li>11</li>
                     <li>12</li>
                     <li>6</li>
+                    <li>18</li>
                 </chances>
                 <isLocked>false</isLocked>
             </li>
