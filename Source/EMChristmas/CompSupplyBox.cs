@@ -55,6 +55,8 @@ namespace EMChristmas
 
     public class CompUseEffect_SpawnSupplies : CompUseEffect
     {
+        bool ChristmasUnlocked = LoadedModManager.GetMod<EMChristmas>().GetSettings<EMChristmas_ModSettings>().ChristmasUnlocked;
+
         Random random = new Random();
         private List<ThingDef> containedSupplies => parent.GetComp<CompSupplyBox>().Props.containedSupplies;
         private List<int> amountMin => parent.GetComp<CompSupplyBox>().Props.amountMin;
@@ -82,7 +84,7 @@ namespace EMChristmas
 
         public override bool CanBeUsedBy(Pawn p, out string failReason)
         {
-            if (DateTime.Now.Month != 12)
+            if ((DateTime.Now.Month != 12) || ChristmasUnlocked)
             {
                 failReason = "Can't open outside of Christmas time.";
                 return false;
