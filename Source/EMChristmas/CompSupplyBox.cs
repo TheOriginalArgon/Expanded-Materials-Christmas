@@ -84,9 +84,9 @@ namespace EMChristmas
 
         public override bool CanBeUsedBy(Pawn p, out string failReason)
         {
-            if ((DateTime.Now.Month != 12) || ChristmasUnlocked)
+            if ((DateTime.Now.Month != 12) && !ChristmasUnlocked)
             {
-                failReason = "Can't open outside of Christmas time.";
+                failReason = "Can't open outside of Christmas month.";
                 return false;
             }
             failReason = null;
