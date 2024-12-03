@@ -21,7 +21,6 @@ namespace EMChristmas
                 canTargetBuildings = false,
                 canTargetItems = true,
                 mapObjectTargetsMustBeAutoAttackable = false,
-                validator = ((TargetInfo x) => BaseTargetValidator(x.Thing))
             };
         }
 

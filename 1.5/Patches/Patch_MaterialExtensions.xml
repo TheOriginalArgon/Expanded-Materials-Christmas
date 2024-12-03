@@ -2,10 +2,12 @@
 
     <!-- Material extension patches -->
 
-    <!-- These operations will likely need to be deletad in the future, as it is not optimal for the extension to be added to a vanilla def. -->
+    <!-- These operations will likely need to be deleted in the future, as it is not optimal for the extension to be added to a vanilla def. -->
     <!-- What should be done, instead, is to modify the code in Argonic Core so that the extension for replacement materials is added to the replacement defs instead of the base def. -->
 
-    <Operation Class="PatchOperationAddModExtension">
+    <!-- EDIT - December 2024: These are kept as a comment in case I happen to need them for some reason -->
+
+    <!-- <Operation Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef [defName = "WoodLog"]</xpath>
         <value>
             <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableResource">
@@ -60,6 +62,6 @@
                 <defaultThingDef>ComponentSpacer</defaultThingDef>
             </li>
         </value>
-    </Operation>
+    </Operation> -->
 
 </Patch>

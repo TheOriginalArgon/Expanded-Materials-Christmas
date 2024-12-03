@@ -46,4 +46,20 @@ namespace EMChristmas
         }
     }
 
+    public class ThoughtWorker_WearingChristmasFabric : ThoughtWorker
+    {
+        protected override ThoughtState CurrentStateInternal(Pawn p)
+        {
+            List<Apparel> wornApparel = p.apparel.WornApparel;
+            for (int i = 0; i < wornApparel.Count; i++)
+            {
+                if (wornApparel[i].Stuff == DefDatabase<ThingDef>.GetNamed("EM_ChristmasFabric"))
+                {
+                    return true;
+                }
+            }
+            return ThoughtState.Inactive;
+        }
+    }
+
 }

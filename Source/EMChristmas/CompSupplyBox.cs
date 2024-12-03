@@ -82,15 +82,13 @@ namespace EMChristmas
             }
         }
 
-        public override bool CanBeUsedBy(Pawn p, out string failReason)
+        public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
             if ((DateTime.Now.Month != 12) && !ChristmasUnlocked)
             {
-                failReason = "Can't open outside of Christmas month.";
-                return false;
+                return "Can't open outside of Christmas month."; // Probably need to be added .Translate() for language compatibility.
             }
-            failReason = null;
-            return true;
+            return base.CanBeUsedBy(p);
         }
     }
 

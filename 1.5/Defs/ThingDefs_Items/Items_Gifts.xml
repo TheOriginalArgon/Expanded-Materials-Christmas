@@ -144,7 +144,10 @@
                     <li>EM_CandyCanes</li>
                     <li>EM_ChristmasCookies</li>
                     <li>EM_SantaHat</li>
-                    <li>EM_SantaHat</li>
+                    <li>EM_ChristmasFabric</li>
+                    <li>EM_Garrapinada</li>
+                    <li>EM_Mantecol</li>
+                    <li>EM_FruitSalad</li>
                 </containedSupplies>
                 <amountMin>
                     <li>10</li>
@@ -152,7 +155,10 @@
                     <li>15</li>
                     <li>30</li>
                     <li>1</li>
+                    <li>10</li>
+                    <li>3</li>
                     <li>1</li>
+                    <li>2</li>
                 </amountMin>
                 <amountMax>
                     <li>30</li>
@@ -160,7 +166,10 @@
                     <li>20</li>
                     <li>35</li>
                     <li>1</li>
-                    <li>1</li>
+                    <li>20</li>
+                    <li>6</li>
+                    <li>3</li>
+                    <li>5</li>
                 </amountMax>
                 <chances>
                     <li>80</li>
@@ -168,7 +177,10 @@
                     <li>50</li>
                     <li>60</li>
                     <li>15</li>
-                    <li>2</li>
+                    <li>5</li>
+                    <li>50</li>
+                    <li>10</li>
+                    <li>15</li>
                 </chances>
                 <isLocked>false</isLocked>
             </li>
@@ -364,9 +376,12 @@
                     <li>EM_CandyCanes</li>
                     <li>EM_ChristmasCookies</li>
                     <li>EM_SantaHat</li>
-                    <li>EM_SantaHat</li>
+                    <li>EM_ChristmasFabric</li>
                     <li>EMC_ChristmasGrenades</li>
                     <li>EM_ChristmasComponent</li>
+                    <li>EM_Garrapinada</li>
+                    <li>EM_Mantecol</li>
+                    <li>EM_FruitSalad</li>
                 </containedSupplies>
                 <amountMin>
                     <li>30</li>
@@ -374,8 +389,11 @@
                     <li>30</li>
                     <li>50</li>
                     <li>2</li>
+                    <li>30</li>
                     <li>1</li>
-                    <li>1</li>
+                    <li>5</li>
+                    <li>10</li>
+                    <li>3</li>
                     <li>5</li>
                 </amountMin>
                 <amountMax>
@@ -384,9 +402,12 @@
                     <li>40</li>
                     <li>55</li>
                     <li>3</li>
-                    <li>2</li>
+                    <li>60</li>
                     <li>1</li>
                     <li>20</li>
+                    <li>16</li>
+                    <li>5</li>
+                    <li>10</li>
                 </amountMax>
                 <chances>
                     <li>80</li>
@@ -394,9 +415,12 @@
                     <li>50</li>
                     <li>60</li>
                     <li>15</li>
-                    <li>2</li>
-                    <li>100</li> <!--12-->
+                    <li>12</li>
+                    <li>12</li>
                     <li>18</li>
+                    <li>80</li>
+                    <li>20</li>
+                    <li>35</li>
                 </chances>
                 <isLocked>false</isLocked>
             </li>

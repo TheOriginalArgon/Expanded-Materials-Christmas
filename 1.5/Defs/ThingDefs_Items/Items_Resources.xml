@@ -65,5 +65,45 @@
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
 
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_ChristmasFabric</defName>
+    <label>christmas fabric</label>
+    <description>Smooth, silk-like fabric of unknown composition. It smells like fruit and hot chocolate. Clothes made of this material are exceptionally beautiful and extrude a sense of warmth and coziness.\n\nThis material probably originates from a mysterious Christmas factory. It is speculated that it's used to make said factory's employees' clothes, since it has extremely good capabilities for insulating against cold.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_ChristmasFabric</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>230</MaxHitPoints>
+      <MarketValue>7</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.3</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.74</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.12</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.90</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(191,37,45)</color>
+      <statFactors>
+        <Flammability>0.3</Flammability>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>4.2</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
 
 </Defs>
