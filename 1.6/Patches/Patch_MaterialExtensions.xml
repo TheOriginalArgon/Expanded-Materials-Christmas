@@ -1,0 +1,67 @@
+<Patch>
+
+    <!-- Material extension patches -->
+
+    <!-- These operations will likely need to be deleted in the future, as it is not optimal for the extension to be added to a vanilla def. -->
+    <!-- What should be done, instead, is to modify the code in Argonic Core so that the extension for replacement materials is added to the replacement defs instead of the base def. -->
+
+    <!-- EDIT - December 2024: These are kept as a comment in case I happen to need them for some reason -->
+
+    <!-- <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef [defName = "WoodLog"]</xpath>
+        <value>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableResource">
+                <interchangableWith>
+                    <li>EM_GingerbreadPlates</li>
+                    <li>EM_CandyWood</li>
+                </interchangableWith>
+                <techLevels>
+                    <li>Archotech</li>
+                    <li>Archotech</li>
+                </techLevels>
+                <costModifiers>
+                    <li>1.0</li>
+                    <li>1.0</li>
+                </costModifiers>
+                <defaultThingDef>WoodLog</defaultThingDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef [defName = "ComponentIndustrial"]</xpath>
+        <value>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableResource">
+                <interchangableWith>
+                    <li>EM_ChristmasComponent</li>
+                </interchangableWith>
+                <techLevels>
+                    <li>Archotech</li>
+                </techLevels>
+                <costModifiers>
+                    <li>2.0</li>
+                </costModifiers>
+                <defaultThingDef>ComponentIndustrial</defaultThingDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef [defName = "ComponentSpacer"]</xpath>
+        <value>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableResource">
+                <interchangableWith>
+                    <li>EM_ChristmasComponent</li>
+                </interchangableWith>
+                <techLevels>
+                    <li>Archotech</li>
+                </techLevels>
+                <costModifiers>
+                    <li>10.0</li>
+                </costModifiers>
+                <defaultThingDef>ComponentSpacer</defaultThingDef>
+            </li>
+        </value>
+    </Operation> -->
+
+</Patch>

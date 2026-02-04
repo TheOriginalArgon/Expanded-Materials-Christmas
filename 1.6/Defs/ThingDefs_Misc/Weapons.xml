@@ -1,0 +1,59 @@
+<Defs>
+
+    <ThingDef ParentName="BaseWeapon">
+        <defName>EMC_ChristmasGrenades</defName>
+        <label>christmas grenades</label>
+        <description>A set of grenades that look like large baubles. They seem to have been crafted in an unknown, legendary christmas factory, and the way they work is not understandable under common science.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Weapon/ChristmasGrenades</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <smeltable>false</smeltable>
+        <verbs>
+            <li>
+                <label>throw christmas grenade</label>
+                <verbClass>Verb_LaunchProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>16.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>1.5</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>EMC_Proj_GrenadeChristmas</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.66</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>EMC_Proj_GrenadeChristmas</defName>
+        <label>christmas grenade</label>
+        <graphicData>
+            <texPath>Things/Projectile/ChristmasGrenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+</Defs>

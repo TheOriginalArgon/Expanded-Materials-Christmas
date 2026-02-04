@@ -2,6 +2,11 @@
     <v1.5>
         <li>/</li>
         <li>1.5</li>
-        <li IfModActive="vanillaexpanded.vweg">ModPatches/VWE_Grenades</li>
+        <li IfModActive="vanillaexpanded.vweg">ModPatches/1.5/VWE_Grenades</li>
     </v1.5>
+    <v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li IfModActive="vanillaexpanded.vweg">ModPatches/1.6/VWE_Grenades</li>
+    </v1.6>
 </loadFolders>

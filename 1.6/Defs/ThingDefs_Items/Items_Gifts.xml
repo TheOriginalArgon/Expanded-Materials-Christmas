@@ -1,0 +1,658 @@
+<Defs>
+
+    <ThingDef ParentName="ResourceBase" Name="EM_SmallGiftBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <label>christmas gift</label>
+        <description>A small cardboard box wrapped in a colorful fabric of some sort. These seem to appear randomly all across the Rim when it's Christmas time.</description>
+        <graphicData>
+            <texPath>Things/Item/Gift/Gift_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(230, 230, 230)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>200</MarketValue>
+            <Mass>1.2</Mass>
+        </statBases>
+        <stackLimit>5</stackLimit>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeability>Buyable</tradeability>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open gift</useLabel>
+                <useDuration>300</useDuration>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>EMChristmas.CompUseEffect_SpawnSupplies</compClass>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <only>(252, 186, 3, 255)</only>
+                </li>
+                <li>
+                    <only>(247, 247, 247, 255)</only>
+                </li>
+                <li>
+                    <only>(242, 121, 121, 255)</only>
+                </li>
+                <li>
+                    <only>(40, 181, 52, 255)</only>
+                </li>
+                <li>
+                    <only>(246, 120, 250, 255)</only>
+                </li>
+                <li>
+                    <only>(255, 185, 33, 255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase" Name="EM_LargeGiftBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <label>large christmas gift</label>
+        <description>A large cardboard box wrapped in a colorful fabric of some sort. These seem to appear randomly all across the Rim when it's Christmas time.</description>
+        <graphicData>
+            <texPath>Things/Item/Gift/Gift_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(230, 230, 230)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>3</Mass>
+        </statBases>
+        <stackLimit>3</stackLimit>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeability>Buyable</tradeability>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open gift</useLabel>
+                <useDuration>600</useDuration>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>EMChristmas.CompUseEffect_SpawnSupplies</compClass>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <only>(252, 186, 3, 255)</only>
+                </li>
+                <li>
+                    <only>(247, 247, 247, 255)</only>
+                </li>
+                <li>
+                    <only>(242, 121, 121, 255)</only>
+                </li>
+                <li>
+                    <only>(40, 181, 52, 255)</only>
+                </li>
+                <li>
+                    <only>(246, 120, 250, 255)</only>
+                </li>
+                <li>
+                    <only>(255, 185, 33, 255)</only>
+                </li>
+                <li>
+                    <only>(102, 60, 150, 255)</only>
+                </li>
+                <li>
+                    <only>(255, 199, 219, 255)</only>
+                </li>
+                <li>
+                    <only>(202, 250, 100, 255)</only>
+                </li>
+                <li>
+                    <only>(94, 166, 149, 255)</only>
+                </li>
+                <li>
+                    <only>(28, 28, 28, 255)</only>
+                </li>
+                <li>
+                    <only>(233, 255, 125, 255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <!-- =================================================== GIFTS =================================================== -->
+
+    <ThingDef ParentName="EM_SmallGiftBase">
+        <defName>EM_GiftSmall_Christmas</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>EM_CandyWood</li>
+                    <li>EM_GingerbreadPlates</li>
+                    <li>EM_CandyCanes</li>
+                    <li>EM_ChristmasCookies</li>
+                    <li>EM_SantaHat</li>
+                    <li>EM_ChristmasFabric</li>
+                    <li>EM_Garrapinada</li>
+                    <li>EM_Mantecol</li>
+                    <li>EM_FruitSalad</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>10</li>
+                    <li>10</li>
+                    <li>15</li>
+                    <li>30</li>
+                    <li>1</li>
+                    <li>10</li>
+                    <li>3</li>
+                    <li>1</li>
+                    <li>2</li>
+                </amountMin>
+                <amountMax>
+                    <li>30</li>
+                    <li>30</li>
+                    <li>20</li>
+                    <li>35</li>
+                    <li>1</li>
+                    <li>20</li>
+                    <li>6</li>
+                    <li>3</li>
+                    <li>5</li>
+                </amountMax>
+                <chances>
+                    <li>80</li>
+                    <li>80</li>
+                    <li>50</li>
+                    <li>60</li>
+                    <li>15</li>
+                    <li>5</li>
+                    <li>50</li>
+                    <li>10</li>
+                    <li>15</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_SmallGiftBase">
+        <defName>EM_GiftSmall_Materials</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>Steel</li>
+                    <li>Plasteel</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Copper</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Iron</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>10</li>
+                    <li>5</li>
+                    <li>10</li>
+                    <li>15</li>
+                    <li>12</li>
+                    <li>10</li>
+                </amountMin>
+                <amountMax>
+                    <li>30</li>
+                    <li>12</li>
+                    <li>25</li>
+                    <li>20</li>
+                    <li>32</li>
+                    <li>22</li>
+                </amountMax>
+                <chances>
+                    <li>100</li>
+                    <li>10</li>
+                    <li>20</li>
+                    <li>70</li>
+                    <li>40</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_SmallGiftBase">
+        <defName>EM_GiftSmall_Tresaure</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Jade</li>
+                    <li MayRequire="kikoshi.jewelry">Diamond</li>
+                    <li MayRequire="kikoshi.jewelry">Sapphire</li>
+                    <li MayRequire="kikoshi.jewelry">Ruby</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>3</li>
+                    <li>5</li>
+                    <li>5</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                </amountMin>
+                <amountMax>
+                    <li>10</li>
+                    <li>12</li>
+                    <li>15</li>
+                    <li>3</li>
+                    <li>3</li>
+                    <li>3</li>
+                </amountMax>
+                <chances>
+                    <li>10</li>
+                    <li>100</li>
+                    <li>20</li>
+                    <li>8</li>
+                    <li>8</li>
+                    <li>8</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_SmallGiftBase">
+        <defName>EM_GiftSmall_Food</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>MealSimple</li>
+                    <li>MealFine</li>
+                    <li>MealLavish</li>
+                    <li MayRequire="VanillaExpanded.VCookE">VCE_MealGourmet</li>
+                    <li MayRequire="VanillaExpanded.VCookE">VCE_MealGourmet</li>
+                    <li MayRequire="VanillaExpanded.VCookE">VCE_SimpleDessert</li>
+                    <li MayRequire="VanillaExpanded.VCookE">VCE_FineDessert</li>
+                    <li MayRequire="VanillaExpanded.VCookE">VCE_LavishDessert</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>2</li>
+                    <li>2</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>2</li>
+                    <li>1</li>
+                </amountMin>
+                <amountMax>
+                    <li>4</li>
+                    <li>3</li>
+                    <li>2</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>3</li>
+                    <li>2</li>
+                    <li>2</li>
+                </amountMax>
+                <chances>
+                    <li>100</li>
+                    <li>50</li>
+                    <li>20</li>
+                    <li>5</li>
+                    <li>2</li>
+                    <li>40</li>
+                    <li>22</li>
+                    <li>10</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_SmallGiftBase">
+        <defName>EM_GiftSmall_Drugs</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>Chocolate</li>
+                    <li>Beer</li>
+                    <li>SmokeleafJoint</li>
+                    <li>Ambrosia</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Cigarettes</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_EnergyDrink</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Juice</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Cider</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>10</li>
+                    <li>8</li>
+                    <li>5</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>3</li>
+                    <li>10</li>
+                    <li>12</li>
+                </amountMin>
+                <amountMax>
+                    <li>18</li>
+                    <li>20</li>
+                    <li>13</li>
+                    <li>30</li>
+                    <li>10</li>
+                    <li>8</li>
+                    <li>30</li>
+                    <li>22</li>
+                </amountMax>
+                <chances>
+                    <li>90</li>
+                    <li>100</li>
+                    <li>30</li>
+                    <li>50</li>
+                    <li>15</li>
+                    <li>20</li>
+                    <li>75</li>
+                    <li>100</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+
+    <ThingDef ParentName="EM_LargeGiftBase">
+        <defName>EM_GiftLarge_Christmas</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>EM_CandyWood</li>
+                    <li>EM_GingerbreadPlates</li>
+                    <li>EM_CandyCanes</li>
+                    <li>EM_ChristmasCookies</li>
+                    <li>EM_SantaHat</li>
+                    <li>EM_ChristmasFabric</li>
+                    <li>EMC_ChristmasGrenades</li>
+                    <li>EM_ChristmasComponent</li>
+                    <li>EM_Garrapinada</li>
+                    <li>EM_Mantecol</li>
+                    <li>EM_FruitSalad</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>30</li>
+                    <li>30</li>
+                    <li>30</li>
+                    <li>50</li>
+                    <li>2</li>
+                    <li>30</li>
+                    <li>1</li>
+                    <li>5</li>
+                    <li>10</li>
+                    <li>3</li>
+                    <li>5</li>
+                </amountMin>
+                <amountMax>
+                    <li>70</li>
+                    <li>70</li>
+                    <li>40</li>
+                    <li>55</li>
+                    <li>3</li>
+                    <li>60</li>
+                    <li>1</li>
+                    <li>20</li>
+                    <li>16</li>
+                    <li>5</li>
+                    <li>10</li>
+                </amountMax>
+                <chances>
+                    <li>80</li>
+                    <li>80</li>
+                    <li>50</li>
+                    <li>60</li>
+                    <li>15</li>
+                    <li>12</li>
+                    <li>12</li>
+                    <li>18</li>
+                    <li>80</li>
+                    <li>20</li>
+                    <li>35</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_LargeGiftBase">
+        <defName>EM_GiftLarge_Materials</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>Steel</li>
+                    <li>Steel</li>
+                    <li>Plasteel</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Copper</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Titanium</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Germanium</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Tungsten</li>
+                    <li MayRequire="Argon.VMEu">VMEu_Lithium</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>20</li>
+                    <li>40</li>
+                    <li>10</li>
+                    <li>12</li>
+                    <li>25</li>
+                    <li>10</li>
+                    <li>12</li>
+                    <li>10</li>
+                    <li>15</li>
+                </amountMin>
+                <amountMax>
+                    <li>35</li>
+                    <li>60</li>
+                    <li>30</li>
+                    <li>35</li>
+                    <li>60</li>
+                    <li>30</li>
+                    <li>25</li>
+                    <li>25</li>
+                    <li>30</li>
+                </amountMax>
+                <chances>
+                    <li>100</li>
+                    <li>40</li>
+                    <li>25</li>
+                    <li>20</li>
+                    <li>50</li>
+                    <li>20</li>
+                    <li>30</li>
+                    <li>18</li>
+                    <li>12</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_LargeGiftBase">
+        <defName>EM_GiftLarge_Tresaure</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Jade</li>
+                    <li MayRequire="kikoshi.jewelry">Diamond</li>
+                    <li MayRequire="kikoshi.jewelry">Sapphire</li>
+                    <li MayRequire="kikoshi.jewelry">Ruby</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>10</li>
+                    <li>25</li>
+                    <li>12</li>
+                    <li>3</li>
+                    <li>3</li>
+                    <li>3</li>
+                </amountMin>
+                <amountMax>
+                    <li>35</li>
+                    <li>120</li>
+                    <li>40</li>
+                    <li>10</li>
+                    <li>10</li>
+                    <li>10</li>
+                </amountMax>
+                <chances>
+                    <li>11</li>
+                    <li>100</li>
+                    <li>23</li>
+                    <li>10</li>
+                    <li>10</li>
+                    <li>10</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_LargeGiftBase">
+        <defName>EM_GiftLarge_Supplies</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>ComponentIndustrial</li>
+                    <li>ComponentSpacer</li>
+                    <li>DevilstrandCloth</li>
+                    <li>Hyperweave</li>
+                    <li>MedicineIndustrial</li>
+                    <li>MedicineUltratech</li>
+                    <li>MealSurvivalPack</li>
+                    <li>Neutroamine</li>
+                    <li>Chemfuel</li>
+                    <li>ReinforcedBarrel</li>
+                    <li MayRequire="OskarPotocki.VFE.Mechanoid">VFE_ComponentMechanoid</li>
+                    <li>EM_ChristmasComponent</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>6</li>
+                    <li>2</li>
+                    <li>35</li>
+                    <li>15</li>
+                    <li>5</li>
+                    <li>3</li>
+                    <li>10</li>
+                    <li>35</li>
+                    <li>20</li>
+                    <li>3</li>
+                    <li>1</li>
+                    <li>10</li>
+                </amountMin>
+                <amountMax>
+                    <li>12</li>
+                    <li>5</li>
+                    <li>52</li>
+                    <li>30</li>
+                    <li>12</li>
+                    <li>8</li>
+                    <li>25</li>
+                    <li>60</li>
+                    <li>45</li>
+                    <li>5</li>
+                    <li>3</li>
+                    <li>20</li>
+                </amountMax>
+                <chances>
+                    <li>90</li>
+                    <li>30</li>
+                    <li>42</li>
+                    <li>14</li>
+                    <li>90</li>
+                    <li>30</li>
+                    <li>100</li>
+                    <li>70</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>6</li>
+                    <li>18</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_LargeGiftBase">
+        <defName>EM_GiftLarge_Drugs</defName>
+        <comps>
+            <li Class="EMChristmas.CompProperties_SupplyBox">
+                <containedSupplies>
+                    <li>Chocolate</li>
+                    <li>Beer</li>
+                    <li>SmokeleafJoint</li>
+                    <li>Ambrosia</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_AmbrandyGood</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_AmbrandyExcellent</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_AmbrandyMasterwork</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_AmbrandyLegendary</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Cigarettes</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Cigars</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_EnergyDrink</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Juice</li>
+                    <li MayRequire="VanillaExpanded.VBrewE">VBE_Cider</li>
+                </containedSupplies>
+                <amountMin>
+                    <li>20</li>
+                    <li>15</li>
+                    <li>10</li>
+                    <li>10</li>
+                    <li>3</li>
+                    <li>2</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>10</li>
+                    <li>6</li>
+                    <li>8</li>
+                    <li>15</li>
+                    <li>20</li>
+                </amountMin>
+                <amountMax>
+                    <li>50</li>
+                    <li>60</li>
+                    <li>40</li>
+                    <li>50</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>3</li>
+                    <li>2</li>
+                    <li>30</li>
+                    <li>22</li>
+                    <li>20</li>
+                    <li>50</li>
+                    <li>52</li>
+                </amountMax>
+                <chances>
+                    <li>90</li>
+                    <li>100</li>
+                    <li>30</li>
+                    <li>50</li>
+                    <li>50</li>
+                    <li>50</li>
+                    <li>10</li>
+                    <li>3</li>
+                    <li>15</li>
+                    <li>5</li>
+                    <li>20</li>
+                    <li>75</li>
+                    <li>100</li>
+                </chances>
+                <isLocked>false</isLocked>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

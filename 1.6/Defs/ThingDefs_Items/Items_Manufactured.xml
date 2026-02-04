@@ -1,0 +1,30 @@
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_ChristmasComponent</defName>
+        <label>christmas component</label>
+        <description>A series of weird, almost toy-like gears, bolts, springs and... candy canes? that somehow seem to almost magically adapt perfectly to common machinery.\n\nIt is thought that they are manufactured somewhere in a far, cold land where there is a huge magical toy factory that gets its power from the collective conception of Christmas across the Rimworlds.</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/ChristmasComponent</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>32</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.6</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </ThingDef>
+
+</Defs>

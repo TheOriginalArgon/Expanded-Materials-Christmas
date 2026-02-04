@@ -1,0 +1,35 @@
+<Defs>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_WoodWithCandyWood</defName>
+        <materialToReplace>WoodLog</materialToReplace>
+        <replaceWith>EM_CandyWood</replaceWith>
+        <maxTechLevel>Archotech</maxTechLevel>
+        <costModifier>1.0</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_WoodWithGingerbread</defName>
+        <materialToReplace>WoodLog</materialToReplace>
+        <replaceWith>EM_GingerbreadPlates</replaceWith>
+        <maxTechLevel>Archotech</maxTechLevel>
+        <costModifier>1.0</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_ComponentsIndustrialWithChristmasComponents</defName>
+        <materialToReplace>ComponentIndustrial</materialToReplace>
+        <replaceWith>EM_ChristmasComponent</replaceWith>
+        <maxTechLevel>Archotech</maxTechLevel>
+        <costModifier>2.0</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_ComponentsSpacerWithChristmasComponents</defName>
+        <materialToReplace>ComponentSpacer</materialToReplace>
+        <replaceWith>EM_ChristmasComponent</replaceWith>
+        <maxTechLevel>Archotech</maxTechLevel>
+        <costModifier>10.0</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+</Defs>
